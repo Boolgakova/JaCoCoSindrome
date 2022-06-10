@@ -11,7 +11,7 @@ public class StatisticsServiceTest {
         StatisticsService service = new StatisticsService();
 
         long[] incomesInBillions = {12, 5, 8, 4, 5, 3, 8, 6, 11, 11, 12};
-        long expected = 5;
+        long expected = 12;
 
         long actual = service.findMax(incomesInBillions);
 
@@ -23,7 +23,7 @@ public class StatisticsServiceTest {
         StatisticsService service = new StatisticsService();
 
         long[] incomesInBillions = {5, 8, 4, 5, 3, 8, 6, 11, 11, 12};
-        long expected = 11;
+        long expected = 12;
 
         long actual = service.findMax(incomesInBillions);
 
@@ -35,7 +35,7 @@ public class StatisticsServiceTest {
         StatisticsService service = new StatisticsService();
 
         long[] incomesInBillions = {5, 8, 4, 5, 3, 20, 8, 6, 11, 11, 12};
-        long expected = 12;
+        long expected = 20;
 
         long actual = service.findMax(incomesInBillions);
 
@@ -47,7 +47,7 @@ public class StatisticsServiceTest {
         StatisticsService service = new StatisticsService();
 
         long[] incomesInBillions = {5, 8, 4, 5, 3, 8, -12, 6, 11, 11, 12};
-        long expected = -12;
+        long expected = 12;
 
         long actual = service.findMax(incomesInBillions);
 
